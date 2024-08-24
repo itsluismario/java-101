@@ -56,4 +56,37 @@ This code demonstrates:
 - Concatenating strings
 - Using comments to explain code logic
 
+## 📝 Java Naming Conventions and Constants
+
+Here's an example showcasing Java naming conventions and constants:
+
+```java
+public class Convention {
+    public static void main(String[] args) {
+        // Case sensitivity
+        int celPhone = 1234;
+        int celphone = 1234;
+
+        // Symbols allowed at the beginning
+        String $countryName = "Canada";
+        String _backgroundColor = "Arena";
+        
+        // Symbols allowed after the first character
+        String currency$ = "123";
+        String background_color = "Arena";
+
+        // Variables and constants
+        int value = -5;
+        final int MAX_VALUE = 100;
+    }
+}
+```
+
+This code illustrates:
+- Java's case sensitivity for variable names
+- Use of symbols in variable names
+- Declaration of constants using the `final` keyword
+
+Note: While Java allows `$` and `_` in variable names, it's generally best to avoid starting variable names with these symbols unless you have a specific reason to do so.
+
 Happy coding! 💻

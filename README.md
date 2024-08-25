@@ -114,4 +114,31 @@ public class Config {
 
 These conventions help maintain code readability and are widely adopted in the Java community.
 
+## 📊 Java Data Types
+
+Java has several built-in data types. Here's an example showcasing integer and floating-point types:
+
+```java
+public class DataTypes {
+    public static void main(String[] args) {
+        // Integer types
+        byte nB = 123;        // 8-bit signed two's complement integer
+        short nS = 12345;     // 16-bit signed two's complement integer
+        int nInt = 1234567890;// 32-bit signed two's complement integer
+        long nL = 1234567890123456L; // 64-bit signed two's complement integer
+
+        // Floating-point types
+        float nF = 1.1234567890123456789123456789F;  // 32-bit IEEE 754 floating-point
+        double nD = 1.123456789;  // 64-bit IEEE 754 floating-point
+    }
+}
+```
+
+This example demonstrates:
+- Different integer types (`byte`, `short`, `int`, `long`) and their typical use cases
+- Floating-point types (`float` and `double`) for decimal numbers
+- The use of `L` suffix for `long` values and `F` suffix for `float` values
+
+Note that the actual precision and range of these types may vary depending on the system architecture.
+
 Happy coding! 💻

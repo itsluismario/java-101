@@ -220,6 +220,19 @@ Key points:
 1. Postfix operators (`x++` or `x--`): The current value is used in the expression, then the variable is incremented or decremented.
 2. Prefix operators (`++x` or `--x`): The variable is incremented or decremented first, then the new value is used in the expression.
 
-Note the difference in output between `100 + lives++` and `100 + ++lives`. In the postfix case, the original value of `lives` is used in the addition before incrementing, while in the prefix case, `lives` is incremented before being used in the addition.
+## 📦 JAR Files
+
+JAR (Java Archive) files are Java files containing compiled code from `.class` files, compressed in ZIP format. These files are later interpreted and executed by the Java Virtual Machine (JVM).
+
+To generate these files, you can follow these steps:
+
+1. Go to `File > Project Structure > Artifacts`
+2. Select the option `JAR > From modules with dependencies`
+3. Compile your project by going to `Build > Build Artifacts > Build`
+4. You'll find your executable files in the `out/artifacts/` folder
+
+JAR files are crucial for distributing Java applications, as they package all necessary compiled classes and resources into a single, easily distributable file.
+
+[Rest of the content remains unchanged]
 
 Happy coding! 💻

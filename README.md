@@ -222,6 +222,26 @@ To generate these files, you can follow these steps:
 
 JAR files are crucial for distributing Java applications, as they package all necessary compiled classes and resources into a single, easily distributable file.
 
-[Rest of the content remains unchanged]
+## 📝 Java Docs and Comments
+
+Java Docs is a tool used by many other tools and applications to help us document all our code using comments. It also allows us to visualize the documentation in HTML format.
+
+Here are the different types of comments in Java:
+
+```java
+// Single-line comment
+
+/* Multi-line
+ * comment
+ */
+
+/**
+ * Java Doc comment
+ */
+```
+
+Java Docs comments (starting with `/**`) are special because they can be processed by the Javadoc tool to generate HTML documentation for your code. They are typically used to describe classes, methods, and fields.
+
+Using proper documentation and comments in your code is crucial for maintainability and collaboration in software development.
 
 Happy coding! 💻

@@ -13,7 +13,7 @@ public class Convention {
         String background_color = "Arena";
 
         // Constants
-        int value = -5;
-        final String otherValue = "5";
+        int VALUE = -5;
+        final String OTHER_VALUE = "5";
     }
 }

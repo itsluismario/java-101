@@ -70,7 +70,7 @@ public class Convention {
         // Symbols allowed at the beginning
         String $countryName = "Canada";
         String _backgroundColor = "Arena";
-        
+
         // Symbols allowed after the first character
         String currency$ = "123";
         String background_color = "Arena";
@@ -88,5 +88,30 @@ This code illustrates:
 - Declaration of constants using the `final` keyword
 
 Note: While Java allows `$` and `_` in variable names, it's generally best to avoid starting variable names with these symbols unless you have a specific reason to do so.
+
+### Specific Naming Conventions
+
+**LowerCamelCase:** for methods and variables
+
+```java
+boolean isAvailable = true;
+```
+
+**UpperCamelCase:** for Classes, interfaces.
+
+```java
+public class Connection { 
+}
+```
+
+**Snake Case:** for constants
+
+```java
+public class Config {
+    public static final int MAX_SIZE = 30;
+}
+```
+
+These conventions help maintain code readability and are widely adopted in the Java community.
 
 Happy coding! 💻

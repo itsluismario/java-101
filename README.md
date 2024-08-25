@@ -8,14 +8,12 @@ This repository is for learning the fundamentals of Java programming.
 
 ## 📘 What You'll Learn
 
-**Ahora aprendiste:**
-- Conocer a Java como lenguaje de programación
-- Trabajar con Variables en Java
-- Implementar estructuras condicionales
-- Crear funciones usando Java
-- Analizar e implementar estructuras de control repetitivas
-
-In this repository, you'll find examples and explanations for these key Java concepts.
+**Now you've learned:**
+- Understanding Java as a programming language
+- Working with Variables in Java
+- Implementing conditional structures
+- Creating functions using Java
+- Analyzing and implementing repetitive control structures
 
 ## 🔢 Variables and Basic Output
 

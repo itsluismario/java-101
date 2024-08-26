@@ -356,3 +356,60 @@ Output with `break`:
 ```
 
 Understanding these control flow statements is crucial for managing the execution of your Java programs effectively.
+
+## 📊 Arrays in Java
+
+Arrays are objects in which we can store more than one variable, essentially a list of elements. Arrays are single-dimensional, but by storing arrays within other arrays, we can create multidimensional arrays.
+
+Arrays are defined in code in the following ways:
+
+```java
+// 1. Define the variable name and the data type it will contain.
+// Either of the following two options is valid:
+DataType[] variableName;
+DataType variableName[];
+
+// 2. Define the size of the array, the number of elements
+// we can store in the array:
+DataType[] variableName = new DataType[capacity];
+
+// Two-dimensional array:
+DataType[][] cities = new DataType[numberOfRows][numberOfColumns];
+```
+
+Since arrays can store multiple elements, the convention is to write the variable names in plural.
+
+Here's an example demonstrating different types of arrays:
+
+```java
+public class Arrays {
+    public static void main(String[] args) {
+        String[] androidVersions = new String[19];
+        String days[] = new String[19];
+
+        String[][] cities = new String[4][2]; // [row][columns]
+        /*
+         * +------------------------------+
+         * |  Country    |  City          |
+         * --------------------------------
+         * | México      | CDMX           |
+         * | México      | Guadalajara    |
+         * | Colombia    | Bogotá         |
+         * | Colombia    | Medellín       |
+         * +------------------------------+
+         * */
+
+        int [][][] numbers = new int[2][2][2]; // [rows][columns][pages]
+        int [][][][] numbers4 = new int[2][2][2][2]; // [rows][columns][pages][books]
+    }
+}
+```
+
+This example shows:
+- One-dimensional arrays (`androidVersions` and `days`)
+- A two-dimensional array (`cities`), which can be visualized as a table
+- Three-dimensional and four-dimensional arrays (`numbers` and `numbers4`)
+
+Arrays are zero-indexed, meaning the first element is at index 0, the second at index 1, and so on.
+
+Working with arrays is crucial in Java programming, as they allow you to efficiently manage collections of data of the same type.

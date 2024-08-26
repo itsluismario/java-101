@@ -244,4 +244,52 @@ Java Docs comments (starting with `/**`) are special because they can be process
 
 Using proper documentation and comments in your code is crucial for maintainability and collaboration in software development.
 
-Happy coding! 💻
+## 🔄 Casting in Java
+
+Casting is the process of converting a value from one data type to another. In Java, we can perform both implicit (automatic) and explicit casting. Here's an example demonstrating various casting scenarios:
+
+```java
+public class Casting {
+    public static void main(String[] args) {
+        // In one year, helping 30 dogs to find a place
+        // How many I help per month?
+        double monthlyDogs = 30.0/12.0;
+        System.out.println(monthlyDogs);  // Output: 2.5
+
+        // Estimated (casting double to int)
+        int estimatedMonthlyDogs = (int) monthlyDogs;
+        System.out.println(estimatedMonthlyDogs);  // Output: 2
+
+        // Exact (casting int to double for precise division)
+        int a = 12;
+        int b = 13;
+        System.out.println((double) a/b);  // Output: 0.9230769230769231
+
+        double c = (double) a/b;
+        System.out.println(c);  // Output: 0.9230769230769231
+
+        // Casting between char and int
+        char n = '1';
+        int nI = n;
+        System.out.println(nI);  // Output: 49 (ASCII value of '1')
+
+        // Casting char to short
+        short nS = (short) n;
+        System.out.println(nS);  // Output: 49
+    }
+}
+```
+
+This example demonstrates various types of casting:
+
+1. Implicit casting: When we perform operations between `int` and `double`, Java automatically promotes `int` to `double` (e.g., `30.0/12.0`).
+
+2. Explicit casting from `double` to `int`: We use `(int)` to truncate a `double` to an `int`, losing the decimal part (e.g., `(int) monthlyDogs`).
+
+3. Explicit casting from `int` to `double`: We cast one operand to `double` to perform floating-point division instead of integer division (e.g., `(double) a/b`).
+
+4. Implicit casting from `char` to `int`: Java automatically converts a `char` to its ASCII value when assigned to an `int` (e.g., `int nI = n`).
+
+5. Explicit casting from `char` to `short`: We can cast a `char` to a `short`, which will also result in its ASCII value (e.g., `(short) n`).
+
+Casting is useful when you need to convert between different numeric types, but be cautious as it can lead to loss of precision or unexpected results if not used carefully. For example, when casting from a larger data type to a smaller one, you may lose information if the value exceeds the range of the target type.

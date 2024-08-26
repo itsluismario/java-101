@@ -293,3 +293,66 @@ This example demonstrates various types of casting:
 5. Explicit casting from `char` to `short`: We can cast a `char` to a `short`, which will also result in its ASCII value (e.g., `(short) n`).
 
 Casting is useful when you need to convert between different numeric types, but be cautious as it can lead to loss of precision or unexpected results if not used carefully. For example, when casting from a larger data type to a smaller one, you may lose information if the value exceeds the range of the target type.
+
+## 🔀 Control Flow Statements
+
+Java provides several control flow statements that allow you to control the execution of your code. Here are three important ones:
+
+### Break
+
+In Java, you'll see the `break` statement in two specific situations:
+
+1. In a **Switch:** `break` prevents the flow from continuing to the next case, ensuring that only one condition is executed:
+
+```java
+switch (colorModeSelected) {
+    case "Light":
+        System.out.println("You selected Light Mode");
+        break;
+    case "Night": //Amber
+        System.out.println("You selected Night Mode");
+        break;
+    case "Blue Dark":
+        System.out.println("You selected Blue Dark Mode");
+        break;
+}
+```
+
+2. To exit a **loop:** `break` can stop the flow in the code, terminating the cycle and jumping to the next instruction after the loop.
+
+### Continue
+
+`continue` also serves to interrupt a cycle, but instead of terminating it like `break`, it returns directly to the condition.
+
+### Return
+
+While in some languages this statement serves as a type of goto, where it breaks the program flow, the best way to use it in Java is in **Functions**. When used here, it's always accompanied by a value, which indicates the data being returned in the function.
+
+### Example
+
+Here's an example demonstrating the difference between `break` and `continue`:
+
+```java
+for (int i = 0; i < 10; i++) {
+    if (i == 5) {
+        // break;
+        continue;
+    }
+    System.out.print(i + " ");
+}
+```
+
+- If we use `break`, the program will print numbers from 0 to 4.
+- If we use `continue`, the program will print numbers from 0 to 9, except for 5.
+
+Output with `continue`:
+```
+0 1 2 3 4 6 7 8 9
+```
+
+Output with `break`:
+```
+0 1 2 3 4
+```
+
+Understanding these control flow statements is crucial for managing the execution of your Java programs effectively.
